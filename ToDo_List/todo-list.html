@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="styles/todo-list.css">
+  </head>
+
+  <body>
+    <p>Todo List</p>
+    
+    <div class="control-buttons">
+      <button class="js-dark-mode-toggle dark-mode-toggle">🌙 Toggle Dark Mode</button>
+      <button class="js-order-button order-button">Order By Priority and date</button>
+      <button class="js-clear-button clear-button">Clear The List</button>
+    </div>
+    
+    <div id="confirm-popup" class="popup-container">
+      <div class="popup">
+        <p>Are you sure you want to delete all tasks?</p>
+        <button id="confirm-delete" class="confirm-button">Yes, Delete</button>
+        <button id="cancel-delete" class="cancel-button">Cancel</button>
+      </div>
+    </div>
+
+    <div class="todo-input-grid">
+      <input placeholder="Todo name"
+        class="js-name-input name-input">
+      
+      <input type="date"
+        class="js-due-date-input due-date-input">
+      
+      <select class="js-priority-input priority-input">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <button class="add-todo-button js-add-todo-button">Add</button>
+    </div>
+
+    <div class="js-todo-list todo-grid"> </div>
+
+    <div class="js-date-error" style="color: red; display: none; font-size: 14px; margin-top: 5px;"></div>
+
+    <script src = 'scripts/todo-list.js'></script>
+
+  </body>
+</html>
