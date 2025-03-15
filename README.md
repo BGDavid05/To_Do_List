@@ -47,7 +47,7 @@ A simple and interactive **Todo List** application built with **HTML, CSS, and J
 git clone https://github.com/your-username/todo-list.git
 ```
 
-2. **Open **`` in your browser.
+2. **Open ** in your browser.
 3. **Start adding tasks!**
 
 ---
